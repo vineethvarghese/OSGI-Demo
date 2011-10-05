@@ -1,11 +1,13 @@
 Manifest-Version: 1.0
 Built-By: vineeth
 Build-Jdk: 1.6.0_25
-Bundle-Version: 0.1.0.SNAPSHOT
+Bundle-Version: 0.0.1
 Tool: Bnd-1.43.0
 Bundle-Name: Seat seller REST Service
-Bnd-LastModified: 1317809178501
+Bnd-LastModified: 1317819765606
 Created-By: Apache Maven Bundle Plugin
 Bundle-ManifestVersion: 2
-Bundle-SymbolicName: com.psl.seatseller.rest-api
+Bundle-SymbolicName: com.psl.seatseller.api
+Web-ContextPath: api
+Import-Package: com.psl.seatseller.ticketing;version="[0.1,1)"
 

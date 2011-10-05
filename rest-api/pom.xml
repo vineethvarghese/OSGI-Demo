@@ -6,9 +6,9 @@
     <parent>
         <artifactId>demos</artifactId>
         <groupId>com.psl.seatseller</groupId>
-        <version>0.1-SNAPSHOT</version>
+        <version>0.0.1</version>
     </parent>
-    <artifactId>rest-api</artifactId>
+    <artifactId>api</artifactId>
     <packaging>bundle</packaging>
     <name>Seat seller REST Service</name>
     <url>http://www.seatseller.com</url>
@@ -125,6 +125,32 @@
             <version>1.2.15-SNAPSHOT</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.maven.artifact.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>ticketing</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.3.4</version>
+		</dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.maven.artifact.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-logging</groupId>
+                    <artifactId>commons-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
     </dependencies>
     <repositories>
         <repository>
@@ -185,9 +211,13 @@
                 <configuration>
                     <manifestLocation>META-INF</manifestLocation>
                     <instructions>
-                        <Export-Package>!com.psl.seatseller.api.internal,com.psl.seatseller*</Export-Package>
-                        <Import-Package>*</Import-Package>
-                        <Include-Resource>src/main/resources</Include-Resource>
+                        <Export-Package>!com.psl.seatseller.api*</Export-Package>
+                        <Import-Package>com.psl.seatseller.ticketing</Import-Package>
+                        <Include-Resource>
+                            src/main/resources,
+                            src/main/webapp
+                        </Include-Resource>
+                        <Web-ContextPath>api</Web-ContextPath>
                     </instructions>
                 </configuration>
             </plugin>
