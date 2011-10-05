@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Export-Package: com.psl.seatseller.inventory;version="0.1.0.SNAPSHOT"
+Built-By: vineeth
+Build-Jdk: 1.6.0_25
+Bundle-Version: 0.1.0.SNAPSHOT
+Tool: Bnd-1.43.0
+Bundle-Name: Inventory Service
+Bnd-LastModified: 1317809174819
+Created-By: Apache Maven Bundle Plugin
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.psl.seatseller.inventory
+Import-Package: com.psl.seatseller.inventory,org.springframework.stere
+ otype;version="[3.0,4)"
+
