@@ -4,10 +4,16 @@ Build-Jdk: 1.6.0_25
 Bundle-Version: 0.0.1
 Tool: Bnd-1.43.0
 Bundle-Name: Seat seller REST Service
-Bnd-LastModified: 1317819765606
+Bnd-LastModified: 1317820816133
 Created-By: Apache Maven Bundle Plugin
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: com.psl.seatseller.api
 Web-ContextPath: api
-Import-Package: com.psl.seatseller.ticketing;version="[0.1,1)"
+Import-Package: com.psl.seatseller.ticketing;version="[0.1,1)",org.spr
+ ingframework.beans.factory.annotation;version="[3.0,4)",org.springfra
+ mework.http;version="[3.0,4)",org.springframework.osgi.web.context.su
+ pport,org.springframework.stereotype;version="[3.0,4)",org.springfram
+ ework.web.bind.annotation;version="[3.0,4)",org.springframework.web.c
+ ontext;version="[3.0,4)",org.springframework.web.servlet;version="[3.
+ 0,4)"
 
