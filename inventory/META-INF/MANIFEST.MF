@@ -1,11 +1,11 @@
 Manifest-Version: 1.0
 Export-Package: com.psl.seatseller.inventory;version="0.1.0.SNAPSHOT"
 Built-By: vineeth
-Build-Jdk: 1.6.0_25
+Build-Jdk: 1.7.0
 Bundle-Version: 0.0.1
 Tool: Bnd-1.43.0
 Bundle-Name: Inventory Service
-Bnd-LastModified: 1317820813408
+Bnd-LastModified: 1317977556647
 Created-By: Apache Maven Bundle Plugin
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: com.psl.seatseller.inventory
