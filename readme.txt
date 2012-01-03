@@ -1,0 +1,2 @@
+This was just a demo project created for the benefit one of my client who wanted to see how easy it is to develop with
+Spring OSGI and to judge whether the whole process hindered a developer's activity.
